@@ -1,0 +1,90 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(27, 0, 0);
+    color: white;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    text-decoration:none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+
+#welcome {
+    margin-top: 190px;
+    justify-self: center;
+    height:190px;
+
+}
+
+#mainHeader {
+    color:rgb(251, 177, 87);
+    font-size: 1.7em;
+    animation: 2s ease-in-out 1 popup forwards;
+    padding-bottom: 50px;
+}
+
+div{
+    justify-content: center;
+    position: relative;
+}
+
+#mainText {
+    font-size: 1.1em;
+    opacity: 0;
+    animation: 2.2s ease-in-out 1 appear forwards;
+    animation-delay: 2s;
+}
+
+#fieldsLine {
+    font-size: 1em;
+    left: 9.9%;
+    opacity: 0;
+    width: 80%;
+    height: 30px;
+    display: flex;
+    /*justify-content: left;*/
+    align-items: center;
+    gap:5px;
+    margin-bottom: 4%;
+    animation: 2s ease-in-out 1 appear forwards;
+    animation-delay: 2s;
+}
+
+#dataScienceLink {
+    margin-left: 5px;
+}
+
+.space {
+    background-color:rgb(251, 177, 87);
+    width: 2px;
+    height: 100%;
+}
+
+@keyframes appear{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes popup{
+    from {
+        transform: translateY(140px);
+    }
+    to{
+        transform: translateY(70px);
+    }
+}

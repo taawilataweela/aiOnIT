@@ -1,0 +1,93 @@
+
+body {
+        font-family:'Times New Roman', Times, serif;
+        background-color: rgb(27, 0, 0);
+        color: white;
+}
+
+#everything{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    quotes: none;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+
+#mainHeader{
+    color:rgb(251, 177, 87);
+    opacity:0;
+    margin-top:150px;
+    font-size: 1.6em;
+    animation: 2s ease-in-out 1 appear forwards;
+}
+
+#text1{
+    animation: 1s ease-in-out 1 appear forwards;
+    animation-delay: 2s;
+}
+
+#secondHeader{
+    color:rgb(251, 177, 87);
+    opacity:0;
+    animation: 2s ease-in-out 1 appear forwards;
+    animation-delay:3s
+}
+
+#text2{
+    animation: 1s ease-in-out 1 appear forwards;
+    animation-delay: 5s;
+}
+#thirdHeader{
+    color:rgb(251, 177, 87);
+    opacity:0;
+    animation: 2s ease-in-out 1 appear forwards;
+    animation-delay:7s
+}
+#text3{
+    animation: 1s ease-in-out 1 appear forwards;
+    animation-delay: 9s;
+}
+
+.text {
+    opacity:0;
+    font-size: 1.1em;
+    justify-self: left;
+}
+
+#goBack{
+    opacity:0;
+    margin-top:40px;
+    display:flex;
+    justify-content: center;
+    quotes:none;
+    animation: 1s ease-in-out 1 appear forwards;
+    animation-delay: 10s;
+}
+
+@keyframes appear{
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    text-decoration:none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
